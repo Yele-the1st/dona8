@@ -40,7 +40,7 @@ const Parallax: FC<ParallaxProps> = ({}) => {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   return (
-    <main className="main relative mb-10">
+    <main className="main select-none pointer-events-none relative mb-10">
       <div className=" flex sm:hidden z-20 overflow-y-auto p-10 bg-[rgb(0,0,0,0.5)] w-full h-full absolute inset-0 overflow-x-hidden ">
         <div className=" my-0 mx-auto relative top-0 max-w-[460px] items-center min-h-full flex w-full rounded-t-[12px] transition-[top] ease-in-out duration-300   ">
           <div className=" relative  bottom-auto rounded-[1rem] h-auto max-h-full overflow-visible bg-transparent backdrop-blur-lg w-full shadow-2xl ">
@@ -55,7 +55,7 @@ const Parallax: FC<ParallaxProps> = ({}) => {
                     on creating a positive transformation
                   </div>
                 </div>
-                <div className=" mt-4 whitespace-nowrap rounded-[1rem] px-3 py-3 text-center font-semibold text-white bg-[#E03E1E]">
+                <div className=" select-auto mt-4 whitespace-nowrap rounded-[1rem] px-3 py-3 text-center font-semibold text-white bg-[#E03E1E]">
                   Donate Now
                 </div>
               </div>
@@ -65,7 +65,7 @@ const Parallax: FC<ParallaxProps> = ({}) => {
       </div>
       <div
         ref={container}
-        className=" overflow-hidden h-[175vh] bg-[#F9E4E3] flex flex-row gap-[2vw] p-[2vw] box-border  "
+        className=" select-none pointer-events-none overflow-hidden h-[175vh] bg-[#F9E4E3] flex flex-row gap-[2vw] p-[2vw] box-border  "
       >
         <Column
           images={[images[0], images[1], images[2]]}
