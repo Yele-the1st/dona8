@@ -60,7 +60,7 @@ const Header: FC<HeaderProps> = ({
   const [session, setSession] = useState<boolean>(false);
   return (
     <div
-      className={`w-full font-Poppins z-20 h-[90px] flex flex-col justify-end items-center px-6 fixed top-0`}
+      className={`w-full font-Poppins z-40 h-[90px] flex flex-col justify-end items-center px-6 fixed top-0`}
     >
       <div
         style={{ backgroundColor: bgOpacity }} // Set the background color opacity based on the scroll
