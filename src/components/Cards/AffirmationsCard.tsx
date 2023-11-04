@@ -21,7 +21,7 @@ const AffirmationsCard: FC<AffirmationsCardProps> = ({ item }) => {
             <h2 className=" text-lg font-Ubuntu mb-2 font-medium ">
               {item.cat}
             </h2>
-            <span className=" font-Source text-sm font-light">
+            <span className=" text-gray-900 font-Source text-sm font-light">
               {item.username}
             </span>
           </div>
