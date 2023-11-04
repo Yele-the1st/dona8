@@ -7,7 +7,7 @@ interface HeroProps {}
 
 const Hero: FC<HeroProps> = ({}) => {
   return (
-    <div className="w-full to-transparent overflow-x-hidden via-[#F9E4E3] from-transparent bg-gradient-to-b sm:bg-gradient-to-r ">
+    <div className="w-full to-white overflow-x-hidden via-[#F9E4E3] from-white bg-gradient-to-b sm:bg-gradient-to-r ">
       <div className=" relative px-6 max-w-5xl mx-auto pt-32 lg:pt-44">
         <h1 className="text-gray-900 font-Poppins font-extrabold text-3xl sm:text-5xl lg:text-6xl text-center">
           Go beyond donations, lend your skills to charity.
