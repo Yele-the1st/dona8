@@ -1,4 +1,6 @@
-import { FC, useEffect, useState } from "react";
+"use client";
+
+import { useEffect, useState } from "react";
 
 const useDimension = (): { width: number; height: number } => {
   const [dimension, setDimension] = useState({ width: 0, height: 0 });

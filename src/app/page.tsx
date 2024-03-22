@@ -6,12 +6,12 @@ import Parallax from "@/components/Hero/Parallax";
 import Header from "@/components/Navigation/Header";
 import Heading from "@/utils/Heading";
 import { FC, useEffect, useState } from "react";
-import Lenis from "@studio-freight/lenis";
 import Affirmations from "@/components/Hero/Affirmations";
 import OurPartners from "@/components/Hero/OurPartners";
 import Blog from "@/components/Hero/Blog";
 import Faq from "@/components/Hero/Faq";
 import Footer from "@/components/Navigation/Footer";
+import Lenis from "@studio-freight/lenis";
 
 interface pageProps {}
 

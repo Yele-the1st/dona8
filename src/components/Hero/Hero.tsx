@@ -37,7 +37,7 @@ const Hero: FC<HeroProps> = ({}) => {
         </div>
         <div className="hidden md:block absolute top-[250px] left-6">
           <Image
-            src={`/assets/Rectangle52.png`}
+            src={`/assets/Rectangle52.webp`}
             alt=""
             height={144}
             width={138}
@@ -46,7 +46,7 @@ const Hero: FC<HeroProps> = ({}) => {
         </div>
         <div className="hidden md:block absolute top-[250px] -right-8">
           <Image
-            src={`/assets/Rectangle53.png`}
+            src={`/assets/Rectangle53.webp`}
             alt=""
             height={144}
             width={138}
@@ -57,7 +57,7 @@ const Hero: FC<HeroProps> = ({}) => {
       {/* <!-- Image gallery --> */}
       <div className=" hidden sm:flex px-6 mt-10  max-w-7xl mx-auto w-full">
         <Image
-          src={`/assets/HeroImage.png`}
+          src={`/assets/HeroImage.webp`}
           alt=""
           height={330}
           width={1247}
@@ -66,7 +66,7 @@ const Hero: FC<HeroProps> = ({}) => {
       </div>
       <div className=" flex sm:hidden px-6 mt-10  max-w-7xl mx-auto w-full">
         <Image
-          src={`/assets/HeroImageMobile.png`}
+          src={`/assets/HeroImageMobile.webp`}
           alt=""
           height={330}
           width={1247}

@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { FC, useEffect, useRef } from "react";
 import { useTransform, useScroll, motion } from "framer-motion";
@@ -12,18 +13,18 @@ interface ColumnProps {
 }
 
 const images = [
-  "/images/1.jpeg",
-  "/images/2.jpg",
-  "/images/3.jpg",
-  "/images/4.jpg",
-  "/images/5.jpg",
-  "/images/6.jpg",
-  "/images/7.jpg",
+  "/images/1.webp",
+  "/images/2.webp",
+  "/images/3.webp",
+  "/images/4.webp",
+  "/images/5.webp",
+  "/images/6.webp",
+  "/images/7.webp",
   "/images/8.webp",
-  "/images/9.jpg",
-  "/images/10.jpg",
-  "/images/11.jpg",
-  "/images/12.jpg",
+  "/images/9.webp",
+  "/images/10.webp",
+  "/images/11.webp",
+  "/images/12.webp",
 ];
 
 const Parallax: FC<ParallaxProps> = ({}) => {
@@ -41,7 +42,7 @@ const Parallax: FC<ParallaxProps> = ({}) => {
 
   return (
     <main className="main select-none pointer-events-none relative mb-10">
-      <div className=" flex sm:hidden z-20 overflow-y-auto p-10 bg-[rgb(0,0,0,0.5)] w-full h-full absolute inset-0 overflow-x-hidden ">
+      <div className=" flex  z-20 overflow-y-auto p-10 bg-[rgb(0,0,0,0.5)] w-full h-full absolute inset-0 overflow-x-hidden ">
         <div className=" my-0 mx-auto relative top-0 max-w-[460px] items-center min-h-full flex w-full rounded-t-[12px] transition-[top] ease-in-out duration-300   ">
           <div className=" relative  bottom-auto rounded-[1rem] h-auto max-h-full overflow-visible bg-transparent backdrop-blur-lg w-full shadow-2xl ">
             <div className=" mb-0 p-[32px] px-[32px] w-full block rounded-[1rem] bg-transparent backdrop-blur-lg ">
@@ -112,7 +113,7 @@ const Column: FC<ColumnProps> = ({ images, y = 0, top }) => {
               src={src}
               fill
               alt="image"
-              priority
+              loading="lazy"
             />
           </div>
         );
